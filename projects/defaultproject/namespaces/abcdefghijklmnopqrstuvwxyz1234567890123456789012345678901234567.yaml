@@ -1,0 +1,21 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  annotations:
+    rafay.dev/description: ""
+  name: abcdefghijklmnopqrstuvwxyz1234567890123456789012345678901234567
+  project: defaultproject
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: minikube-cluster-jan-23-1
+    - key: rafay.dev/clusterName
+      value: oci-minikube-cluster-jan28
+    - key: rafay.dev/clusterName
+      value: remote-minikube-cluster-jan29
+  resourceQuotas: {}
